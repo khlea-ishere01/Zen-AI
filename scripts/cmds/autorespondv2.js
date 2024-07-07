@@ -18,22 +18,44 @@ const { body, messageID, threadID } = event;
 
 // Reactions based on words
 const emojis = {
-"🌸": ["Ritsu", "Princess", "sanchokuin", "Goddess", "Anaïs", "Barro", "Tsiaro", "Kazu", "Thea", "Aesther"],
-"💚": ["jolie", "belle", "beau", "gaganunin", "pfft", "xyrene", "fantastique"],
-"😾": ["🤨", "nooo", "talong", "galit"],
-"😼": ["wtf", "fck", "haaays", "stfu", "ngi ", "ngek", "nge ", "luh", "lah"],
-"😸": ["pill", "laugh", "lt ", "blague", "huy", "hoy"],
+"🌸": ["Goddess", "Kaycee", "Zen", "Beautiful", "Pretty", "pretty", "maganda", "beautiful", "ganda", "yeppeo", "beauty", "Beauty", "Flower", "flower", "julianne", "Julianne", "yesha", "Yesha"],
+"😆": ["haha", "hahaha", "hahahaha", "hahahahaha", "pfft", "pft", "pffft", "HAHA", "HAHAHA", "HAHAHAHA", "HAHAHAHAHA", "HAHAHAHAHAHA", "hshs", "HSHS", "hshshs", "HSHSHS"],
+"😠": ["🤨", "nooo", "no", "talong", "galit", "noo", "nagagalit", "mad", "angry", "magalit", "ayoko", "ayoq", "ayaw"],
+"😏": ["wtf", "fck", "haaays", "stfu", "ngi ", "ngek", "nge ", "luh", "lah", "hays", "wth", "fuck", "tangina", "putangina", "tanginamo", "putanginamo", "Tangina", "Putangina", "Tanginamo", "Putanginamo"],
 "⏳": ["prodia", "sdxl", "bardv3", "tanongv2", "-imagine", "genimg", "Tanongv4", "kamla", "-shortcut"],
-"👋": ["salut", "bonjour", "c v"],
+"👋": ["Hi", "hi", "Hii", "hii", "hello", "Hello", "hiii", "Hiii", "loe", "Loe", "loee", "Loee"],
 "🌊": ["ok", "cool", "bien", "super", "d'accord", "génial", "merveille"],
 };
 
 // Replies to specific words
 const replies = {
-"Bye": "A+ tard 🌸😘...",
-"muaah": "💋🌷 bisous ",
-"kaiz": "De aona ? ",
-"who is you lover ?": "𝗧𝗛𝗘𝗔🌷 𝗶𝘀 𝗺𝘆 𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴🌸"};
+"Bye": "bye babe",
+"muah": "💋🌷",
+"teh": "ano?",
+"leia, who is your mother?": "Kaycee, pinaka mamahal na nanay ko",
+"mahal kita": "love you too, baby",
+"mahal na mahal kita": "love you too, baby",
+"bot": "I'm not a bot!",
+"bots": "I'm not a bot!",
+"ewan": "ano?",
+"fuck": "bakit ka nagmumura?",
+"tanginamo": "bakit ka nagmumura?",
+"tangina": "bakit ka nagmumura?",
+"putangina": "bakit ka nagmumura?",
+"fck": "bakit ka nagmumura?",
+"shit": "bakit ka nagmumura?",
+"misskonasya": "hindi ka miss, duh",
+"misskonasiya": "hindi ka miss, duh",
+"miss ko na sya": "hindi ka miss, duh",
+"miss ko na siya": "hindi ka miss, duh",
+"julianne": "pagpahingahin mo po muna si nanay",
+"thanks": "you're welcome!",
+"thank you": "you're welcome!",
+"thx": "you're welcome!",
+"ty": "you're welcome!",
+"tyy": "you're welcome!",
+"thank youu": "you're welcome!",
+"yesha": "pagpahingahin mo po muna si nanay",};
 
 // React based on words
 for (const [emoji, words] of Object.entries(emojis)) {
@@ -51,4 +73,4 @@ api.sendMessage(reply, threadID, messageID);
 }
 }
 },
-};
+};};
