@@ -1,4 +1,4 @@
-const config = require("../data/config.dev.json")
+const config = require("../config.dev.json")
 module.exports.run = async (bot, message, args) => {
     if (message.author.id == config.ownerid) {
         const m = await message.channel.send('Pong!');
